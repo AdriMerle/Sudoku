@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 
 public class MainController implements Controller {
 
-	private static final int MESSAGE_DISPLAY_TIME = 5 * 1000;
+	private static final int MESSAGE_DISPLAY_TIME = 10 * 1000;
 
 	@FXML
 	private HBox panelsContainer;
@@ -53,7 +53,9 @@ public class MainController implements Controller {
 			panelsContainer.getChildren().add(new Pane(new Label("An error occurred while loading the view.")));
 		}
 
-		this.dataModel.setBoard(new Board());
+		Board board = new Board();
+		board.initializeBoard();
+		this.dataModel.setBoard(board);
 	}
 
 	private void loadPanel(String path) throws IOException, IllegalStateException {

@@ -1,12 +1,24 @@
 package fr.sudoku.model;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class Board {
-    private final int[][] grid = new int[9][9];
+
+    private static final int N = 9;
+    private static final int SRN = 3;
+
+    private static final int K = 30;
+    private final int[][] grid = new int[N][N];
+
+    private final boolean[][] isFixed = new boolean[N][N];
+
+    private final Random rnd = new Random();
 
     public Board() {
         // Initialize the grid with 0
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9 ; j++) {
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N ; j++) {
                 this.grid[i][j] = 0;
             }
         }
@@ -17,116 +29,111 @@ public class Board {
      * while respecting the rules of the game
      */
     public void initializeBoard() {
-        // initialise first row
-        for (int i = 0; i < 9; i++) {
-            this.grid[0][i] = i + 1;
+
+        // Fill the diagonal
+        for (int i = 0; i<N; i=i+SRN) {
+            fillBox(i, i);
+        }
+
+        fillRemaining(0, SRN);
+
+        // Remove Randomly K digits to make game
+        removeKDigits();
+
+        // Set the fixed cells to true
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N ; j++) {
+                this.isFixed[i][j] = this.grid[i][j] != 0;
+            }
+        }
+
+        System.out.println(this);
+    }
+
+    private void removeKDigits()
+    {
+        int count = K;
+        while (count != 0)
+        {
+            int cellId = randomGenerator(N*N)-1;
+
+            // extract coordinates i  and j
+            int i = (cellId/N);
+            int j = cellId%N;
+            if (j != 0)
+                j = j - 1;
+
+            if (this.grid[i][j] != 0)
+            {
+                count--;
+                this.grid[i][j] = 0;
+            }
         }
     }
 
-    /** Check grid integrity
-     * Each row, column and square must contain only one time each number from 1 to 9
-     * @return true if the grid is valid, false otherwise
-     */
-    public boolean checkGrid() {
-        // Check each row
-        for (int i = 0; i < 9; i++) {
-            if (!checkRow(i)) {
-                return false;
+    private boolean fillRemaining(int i, int j)
+    {
+        //  System.out.println(i+" "+j);
+        if (j>=N && i<N-1)
+        {
+            i = i + 1;
+            j = 0;
+        }
+        if (i>=N && j>=N)
+            return true;
+
+        if (i < SRN)
+        {
+            if (j < SRN)
+                j = SRN;
+        }
+        else if (i < N-SRN)
+        {
+            if (j== (i/SRN) *SRN)
+                j =  j + SRN;
+        }
+        else
+        {
+            if (j == N-SRN)
+            {
+                i = i + 1;
+                j = 0;
+                if (i>=N)
+                    return true;
             }
         }
 
-        // Check each column
-        for (int i = 0; i < 9; i++) {
-            if (!checkColumn(i)) {
-                return false;
+        for (int num = 1; num<=N; num++)
+        {
+            if (checkIfSafe(i, j, num))
+            {
+                this.grid[i][j] = num;
+                if (fillRemaining(i, j+1))
+                    return true;
+
+                this.grid[i][j] = 0;
             }
         }
-
-        // Check each square
-        for (int i = 0; i < 9; i++) {
-            if (!checkSquare(i)) {
-                return false;
-            }
-        }
-
-        return true;
+        return false;
     }
 
-    /** Check if a row is valid
-     * @param row the row to check
-     * @return true if the row is valid, false otherwise
-     */
-    private boolean checkRow(int row) {
-        boolean[] numbers = initNumbers();
-
-        // Check each number
-        for (int i = 0; i < 9; i++) {
-            if (this.grid[row][i] != 0) {
-                if (numbers[this.grid[row][i] - 1]) {
-                    return false;
-                } else {
-                    numbers[this.grid[row][i] - 1] = true;
+    // Fill a 3 x 3 matrix.
+    private void fillBox(int row,int col)
+    {
+        int num;
+        for (int i=0; i<SRN; i++)
+        {
+            for (int j=0; j<SRN; j++)
+            {
+                do
+                {
+                    num = randomGenerator(N);
                 }
+                while (!unusedInBox(row, col, num));
+
+                grid[row+i][col+j] = num;
             }
         }
-
-        return true;
-    }
-
-    /** Check if a column is valid
-     * @param column the column to check
-     * @return true if the column is valid, false otherwise
-     */
-    private boolean checkColumn(int column) {
-        boolean[] numbers = initNumbers();
-
-        // Check each number
-        for (int i = 0; i < 9; i++) {
-            if (this.grid[i][column] != 0) {
-                if (numbers[this.grid[i][column] - 1]) {
-                    return false;
-                } else {
-                    numbers[this.grid[i][column] - 1] = true;
-                }
-            }
-        }
-
-        return true;
-    }
-
-    /** Check if a square is valid
-     * @param square the square to check
-     * @return true if the square is valid, false otherwise
-     */
-    public boolean checkSquare(int square) {
-        boolean[] numbers = initNumbers();
-
-        // Check each number
-        for (int i = 0; i < 9; i++) {
-            int row = (square / 3) * 3 + (i / 3);
-            int column = (square % 3) * 3 + (i % 3);
-
-            if (this.grid[row][column] != 0) {
-                if (numbers[this.grid[row][column] - 1]) {
-                    return false;
-                } else {
-                    numbers[this.grid[row][column] - 1] = true;
-                }
-            }
-        }
-
-        return true;
-    }
-
-    private boolean[] initNumbers() {
-        boolean[] numbers = new boolean[9];
-
-        // Initialize the array
-        for (int i = 0; i < 9; i++) {
-            numbers[i] = false;
-        }
-
-        return numbers;
     }
 
     /** Get the value of a cell
@@ -139,12 +146,70 @@ public class Board {
     }
 
     public void setCellValue(int i, int j, int value) {
-        System.out.println("set cell (" + i + ", " + j + ") = " + value);
-        int oldValue = this.grid[i][j];
-        this.grid[i][j] = value;
-        if(!checkGrid()) {
-            this.grid[i][j] = oldValue;
-            throw new IllegalStateException("Invalid grid");
+        if(this.isFixed[i][j]) {
+            throw new IllegalStateException("This cell is fixed.");
+        } else if(checkIfSafe(i, j, value)) {
+            this.grid[i][j] = value;
+        } else {
+            throw new IllegalStateException("Invalid value.");
         }
+    }
+
+    public boolean isFixed(int i, int j) {
+        return this.isFixed[i][j];
+    }
+
+    // Random generator
+    int randomGenerator(int num) {
+        return rnd.nextInt(num)+1;
+    }
+
+    // Check if safe to put in cell
+    boolean checkIfSafe(int i, int j, int num) {
+        return (unusedInRow(i, num) &&
+                unusedInCol(j, num) &&
+                unusedInBox(i-i%SRN, j-j%SRN, num));
+    }
+
+    // check in the row for existence
+    boolean unusedInRow(int i,int num) {
+        for (int j = 0; j<N; j++)
+            if (this.grid[i][j] == num)
+                return false;
+        return true;
+    }
+
+    // check in the cow for existence
+    boolean unusedInCol(int j, int num) {
+        for (int i = 0; i<N; i++)
+            if (this.grid[i][j] == num)
+                return false;
+        return true;
+    }
+
+    boolean unusedInBox(int rowStart, int colStart, int num) {
+        for (int i = 0; i<SRN; i++)
+            for (int j = 0; j<SRN; j++)
+                if (this.grid[rowStart+i][colStart+j]==num)
+                    return false;
+
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+
+        for (int i = 0; i < 9; i++) {
+            builder.append(Arrays.toString(this.grid[i]));
+            builder.append("\n");
+        }
+
+        for (int i = 0; i < 9; i++) {
+            builder.append(Arrays.toString(this.isFixed[i]));
+            builder.append("\n");
+        }
+
+        return builder.toString();
     }
 }
