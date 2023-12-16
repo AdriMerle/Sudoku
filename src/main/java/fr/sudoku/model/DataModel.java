@@ -14,4 +14,8 @@ public class DataModel {
     public ObjectProperty<Board> boardProperty() {
         return this.board;
     }
+
+    public void setCellValue(int i, int j, int value) {
+        this.board.get().setCellValue(i, j, value);
+    }
 }

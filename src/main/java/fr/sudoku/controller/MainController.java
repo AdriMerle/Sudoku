@@ -1,6 +1,7 @@
 package fr.sudoku.controller;
 
 import fr.sudoku.controller.command.CommandList;
+import fr.sudoku.model.Board;
 import fr.sudoku.model.DataModel;
 import fr.sudoku.view.PopUp;
 import javafx.application.Platform;
@@ -51,6 +52,8 @@ public class MainController implements Controller {
 			panelsContainer.getChildren().clear();
 			panelsContainer.getChildren().add(new Pane(new Label("An error occurred while loading the view.")));
 		}
+
+		this.dataModel.setBoard(new Board());
 	}
 
 	private void loadPanel(String path) throws IOException, IllegalStateException {

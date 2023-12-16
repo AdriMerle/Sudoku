@@ -12,6 +12,17 @@ public class Board {
         }
     }
 
+
+    /** fills randomly the board with numbers from 1 to 9
+     * while respecting the rules of the game
+     */
+    public void initializeBoard() {
+        // initialise first row
+        for (int i = 0; i < 9; i++) {
+            this.grid[0][i] = i + 1;
+        }
+    }
+
     /** Check grid integrity
      * Each row, column and square must contain only one time each number from 1 to 9
      * @return true if the grid is valid, false otherwise
@@ -125,5 +136,15 @@ public class Board {
      */
     public int getCellValue(int row, int column) {
         return this.grid[row][column];
+    }
+
+    public void setCellValue(int i, int j, int value) {
+        System.out.println("set cell (" + i + ", " + j + ") = " + value);
+        int oldValue = this.grid[i][j];
+        this.grid[i][j] = value;
+        if(!checkGrid()) {
+            this.grid[i][j] = oldValue;
+            throw new IllegalStateException("Invalid grid");
+        }
     }
 }
