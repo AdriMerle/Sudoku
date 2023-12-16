@@ -2,6 +2,7 @@ package fr.sudoku;
 
 import fr.sudoku.controller.MainController;
 import fr.sudoku.controller.command.CommandList;
+import fr.sudoku.model.DataModel;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,11 +14,12 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		CommandList commandList = new CommandList();
+		DataModel dataModel = new DataModel();
 		
 		FXMLLoader rootLoader = new FXMLLoader(getClass().getClassLoader().getResource("Main.fxml"));
 		Parent root = rootLoader.load();
 		MainController mainController = rootLoader.getController();
-		mainController.initialize(null, commandList);
+		mainController.initialize(dataModel, null, commandList);
 
 		Scene scene = new Scene(root);
 

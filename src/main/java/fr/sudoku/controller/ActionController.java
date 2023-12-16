@@ -1,6 +1,7 @@
 package fr.sudoku.controller;
 
 import fr.sudoku.controller.command.*;
+import fr.sudoku.model.DataModel;
 
 /**
  * Controller for the action panel (left side)
@@ -13,7 +14,7 @@ public class ActionController implements Controller {
 	private MainController parentController;
 
 	@Override
-	public void initialize(MainController parentController, CommandList commandList) {
+	public void initialize(DataModel dataModel, MainController parentController, CommandList commandList) {
 		this.commandList = commandList;
 		this.parentController = parentController;
 	}

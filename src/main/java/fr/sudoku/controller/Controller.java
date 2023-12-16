@@ -1,6 +1,7 @@
 package fr.sudoku.controller;
 
 import fr.sudoku.controller.command.CommandList;
+import fr.sudoku.model.DataModel;
 
 /**
  * A controller for the MVC pattern with JavaFX.
@@ -20,5 +21,5 @@ public interface Controller {
 	 * @param mainController - the main controller (if so)
 	 * @param commandList    - the command list
 	 */
-	void initialize(MainController mainController, CommandList commandList);
+	void initialize(DataModel dataModel, MainController parentController, CommandList commandList);
 }

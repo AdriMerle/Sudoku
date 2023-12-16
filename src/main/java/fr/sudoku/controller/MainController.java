@@ -1,6 +1,7 @@
 package fr.sudoku.controller;
 
 import fr.sudoku.controller.command.CommandList;
+import fr.sudoku.model.DataModel;
 import fr.sudoku.view.PopUp;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -25,16 +26,19 @@ public class MainController implements Controller {
 
 	private CommandList commandList;
 
+	private DataModel dataModel;
+
 	/**
 	 * In this implementation, the parent controller is ignored, as it is supposed
 	 * to be this controller
 	 */
 	@Override
-	public void initialize(MainController parentController, CommandList commandList) {
+	public void initialize(DataModel dataModel, MainController parentController, CommandList commandList) {
 		this.commandList = commandList;
+		this.dataModel = dataModel;
 
 		try {
-			String[] panelPaths = { "ActionPanel.fxml" };
+			String[] panelPaths = { "ActionPanel.fxml", "BoardPanel.fxml" };
 
 			for (String panelPath : panelPaths) {
 				loadPanel(panelPath);
@@ -53,7 +57,7 @@ public class MainController implements Controller {
 		FXMLLoader panelLoader = new FXMLLoader(getClass().getClassLoader().getResource(path));
 		Parent panel = panelLoader.load();
 		Controller controller = panelLoader.getController();
-		controller.initialize(this, commandList);
+		controller.initialize(this.dataModel, this, commandList);
 		panelsContainer.getChildren().add(panel);
 	}
 
