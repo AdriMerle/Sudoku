@@ -48,6 +48,7 @@ public class BoardController implements Controller {
                 label.setLayoutY(y);
                 label.setStyle("-fx-border-color: black; -fx-border-width: 1px;");
                 label.setText(String.valueOf(board.getCellValue(i, j)));
+                label.setAlignment(javafx.geometry.Pos.CENTER);
                 this.anchorPane.getChildren().add(label);
             }
         }
