@@ -7,7 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e436b3a-6a87-40fc-94eb-23ea0e8155ec" name="Changes" comment="Initialization" />
+    <list default="true" id="7e436b3a-6a87-40fc-94eb-23ea0e8155ec" name="Changes" comment="Initialization of project">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -314,15 +316,7 @@
       <workItem from="1702660508201" duration="31000" />
       <workItem from="1702662139886" duration="66000" />
       <workItem from="1702662225631" duration="658000" />
-      <workItem from="1702717445563" duration="644000" />
-    </task>
-    <task id="LOCAL-00006" summary="Changed if with switch in parser">
-      <option name="closed" value="true" />
-      <created>1701072539877</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1701072539877</updated>
+      <workItem from="1702717445563" duration="712000" />
     </task>
     <task id="LOCAL-00007" summary="Changed if with switch in parser + merge modif">
       <option name="closed" value="true" />
@@ -708,7 +702,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702662652775</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Initialization of project">
+      <option name="closed" value="true" />
+      <created>1702718128446</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1702718128446</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -756,7 +758,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="setInitialDirectory to the folder containing our maps for FileChooser" />
     <MESSAGE value="LOGO FOR KROUSTYTOUR" />
     <MESSAGE value="Better code for logo and fileChooser" />
     <MESSAGE value="Small mistake in the path for FileChooser" />
@@ -781,7 +782,8 @@
     <MESSAGE value="Added error message for trap delivery" />
     <MESSAGE value="Tests for DeliveryGraph" />
     <MESSAGE value="Initialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialization" />
+    <MESSAGE value="Initialization of project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialization of project" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AGILE_KroustyTour$test.ic" NAME="test Coverage Results" MODIFIED="1702546773231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
