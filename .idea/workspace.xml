@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e436b3a-6a87-40fc-94eb-23ea0e8155ec" name="Changes" comment="Initialization" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/algorithmie" />
+                <branch-info repo="$PROJECT_DIR$" source="origin/ui" />
+                <branch-info repo="$PROJECT_DIR$" source="origin/xml-parser" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="unit-tests" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AdriMerle&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6d058381-8d82-4317-8e30-6dd592b4b5ea" />
+        <option name="url" value="https://github.com/hunkanome/AGILE-KroustyTour.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2YWZKdEg3WKOLHNBdraxNXNLKfK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/adrin/OneDrive - INSA Lyon/Bureau/INSA/IF/4IF S1/AGILE-KroustyTour&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.20641282&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\adrin\OneDrive - INSA Lyon\Bureau\INSA\IF\4IF S1\AGILE-KroustyTour\data\xml" />
+      <recent name="C:\Users\adrin\OneDrive - INSA Lyon\Bureau\INSA\IF\4IF S1\AGILE-KroustyTour\src\main\java\fr\insalyon\algorithm\TSPprof" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fr.insalyon.algorithm.TSPprof" />
+      <recent name="fr.insalyon.algorithm" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.run">
+    <configuration name="DeliveryGraphTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sudoku" />
+      <extension name="coverage" sample_coverage="false">
+        <pattern>
+          <option name="PATTERN" value="fr.sudoku.agile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.insalyon.agile" />
+      <option name="MAIN_CLASS_NAME" value="fr.sudoku.agile.DeliveryGraphTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeliveryGraphTest.testGetShortestPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sudoku" />
+      <extension name="coverage" sample_coverage="false">
+        <pattern>
+          <option name="PATTERN" value="fr.sudoku.agile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.insalyon.agile" />
+      <option name="MAIN_CLASS_NAME" value="fr.sudoku.agile.DeliveryGraphTest" />
+      <option name="METHOD_NAME" value="testGetShortestPath" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TSPTest.testTSPNoDeliveryInWarehouseTimeWindow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sudoku" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.sudoku.agile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.insalyon.agile" />
+      <option name="MAIN_CLASS_NAME" value="fr.sudoku.agile.TSPTest" />
+      <option name="METHOD_NAME" value="testTSPNoDeliveryInWarehouseTimeWindow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TSPTest.testTSPSameTimeWindow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sudoku" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.sudoku.agile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.insalyon.agile" />
+      <option name="MAIN_CLASS_NAME" value="fr.sudoku.agile.TSPTest" />
+      <option name="METHOD_NAME" value="testTSPSameTimeWindow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="JUnit" factoryName="JUnit">
+      <module name="sudoku" />
+      <extension name="coverage" sample_coverage="false" />
+      <option name="PACKAGE_NAME" value="fr" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="sudoku" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="sudoku" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="run" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.test" />
+      <item itemvalue="JUnit.DeliveryGraphTest" />
+      <item itemvalue="JUnit.DeliveryGraphTest.testGetShortestPath" />
+      <item itemvalue="JUnit.TSPTest.testTSPNoDeliveryInWarehouseTimeWindow" />
+      <item itemvalue="JUnit.TSPTest.testTSPSameTimeWindow" />
+      <item itemvalue="Maven.run" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TSPTest.testTSPSameTimeWindow" />
+        <item itemvalue="JUnit.TSPTest.testTSPNoDeliveryInWarehouseTimeWindow" />
+        <item itemvalue="JUnit.DeliveryGraphTest" />
+        <item itemvalue="JUnit.DeliveryGraphTest.testGetShortestPath" />
+        <item itemvalue="JUnit.TSPTest.testTSPSameTimeWindow" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e436b3a-6a87-40fc-94eb-23ea0e8155ec" name="Changes" comment="" />
+      <created>1700643238156</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700643238156</updated>
+      <workItem from="1700643239565" duration="555000" />
+      <workItem from="1700643827160" duration="461000" />
+      <workItem from="1700644362064" duration="5802000" />
+      <workItem from="1700659547107" duration="324000" />
+      <workItem from="1700949891516" duration="346000" />
+      <workItem from="1700950251746" duration="154000" />
+      <workItem from="1701070146032" duration="8968000" />
+      <workItem from="1701079195899" duration="3291000" />
+      <workItem from="1701100651001" duration="495000" />
+      <workItem from="1701242472612" duration="11155000" />
+      <workItem from="1701272001332" duration="3252000" />
+      <workItem from="1701275843720" duration="436000" />
+      <workItem from="1701334992747" duration="8025000" />
+      <workItem from="1701353904481" duration="212000" />
+      <workItem from="1701354128335" duration="3336000" />
+      <workItem from="1701442587015" duration="6453000" />
+      <workItem from="1701673682877" duration="9543000" />
+      <workItem from="1701684233608" duration="2550000" />
+      <workItem from="1701783349426" duration="1309000" />
+      <workItem from="1701784682975" duration="3086000" />
+      <workItem from="1701795830218" duration="283000" />
+      <workItem from="1701846660772" duration="3974000" />
+      <workItem from="1701850729721" duration="570000" />
+      <workItem from="1701853251421" duration="3735000" />
+      <workItem from="1701942904847" duration="371000" />
+      <workItem from="1701943370141" duration="2902000" />
+      <workItem from="1702111565480" duration="127000" />
+      <workItem from="1702278702781" duration="5124000" />
+      <workItem from="1702285115482" duration="583000" />
+      <workItem from="1702285712120" duration="6154000" />
+      <workItem from="1702295183714" duration="1156000" />
+      <workItem from="1702296355668" duration="5135000" />
+      <workItem from="1702301526812" duration="1689000" />
+      <workItem from="1702306340333" duration="32000" />
+      <workItem from="1702307413003" duration="5000" />
+      <workItem from="1702391889047" duration="429000" />
+      <workItem from="1702392341240" duration="3596000" />
+      <workItem from="1702450635469" duration="11294000" />
+      <workItem from="1702544972228" duration="1932000" />
+      <workItem from="1702556478556" duration="153000" />
+      <workItem from="1702653594190" duration="122000" />
+      <workItem from="1702656945466" duration="34000" />
+      <workItem from="1702657025623" duration="343000" />
+      <workItem from="1702657865820" duration="21000" />
+      <workItem from="1702658191139" duration="1374000" />
+      <workItem from="1702659769086" duration="722000" />
+      <workItem from="1702660508201" duration="31000" />
+      <workItem from="1702662139886" duration="66000" />
+      <workItem from="1702662225631" duration="658000" />
+      <workItem from="1702717445563" duration="644000" />
+    </task>
+    <task id="LOCAL-00006" summary="Changed if with switch in parser">
+      <option name="closed" value="true" />
+      <created>1701072539877</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701072539877</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changed if with switch in parser + merge modif">
+      <option name="closed" value="true" />
+      <created>1701072699396</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701072699396</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Simple TSP implementation">
+      <option name="closed" value="true" />
+      <created>1701078615839</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701078615839</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Small bound function (might improve time on large graph)">
+      <option name="closed" value="true" />
+      <created>1701080280708</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701080280708</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Unit tests for TSP">
+      <option name="closed" value="true" />
+      <created>1701081493540</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701081493540</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Unit tests for XML map parsing">
+      <option name="closed" value="true" />
+      <created>1701082399685</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701082399685</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fin de séance (ça marche pas)">
+      <option name="closed" value="true" />
+      <created>1701272100442</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701272100442</updated>
+    </task>
+    <task id="LOCAL-00013" summary="First working tsp with time windows">
+      <option name="closed" value="true" />
+      <created>1701336302875</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701336302875</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Improving time managing (working only with contiguous time windows)">
+      <option name="closed" value="true" />
+      <created>1701341389552</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1701341389552</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Improving time managing (working only with contiguous time windows -&gt; improved yet not completely working)">
+      <option name="closed" value="true" />
+      <created>1701342971075</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701342971075</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fixed uncontiguous TimeWindow problem (should work for any set of deliveries)">
+      <option name="closed" value="true" />
+      <created>1701356019706</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701356019707</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Small fixes for better code">
+      <option name="closed" value="true" />
+      <created>1701357398515</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701357398515</updated>
+    </task>
+    <task id="LOCAL-00018" summary="New unit tests for TSP">
+      <option name="closed" value="true" />
+      <created>1701446391429</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701446391429</updated>
+    </task>
+    <task id="LOCAL-00019" summary="New unit tests for TSP">
+      <option name="closed" value="true" />
+      <created>1701446414728</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701446414728</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Little fix for unit tests">
+      <option name="closed" value="true" />
+      <created>1701446463764</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1701446463764</updated>
+    </task>
+    <task id="LOCAL-00021" summary="More unit tests for TSP">
+      <option name="closed" value="true" />
+      <created>1701446649004</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1701446649004</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Small fixes">
+      <option name="closed" value="true" />
+      <created>1701446667264</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1701446667264</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Merged main onto TSP">
+      <option name="closed" value="true" />
+      <created>1701448002331</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1701448002331</updated>
+    </task>
+    <task id="LOCAL-00024" summary="More javadoc">
+      <option name="closed" value="true" />
+      <created>1701449915652</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1701449915652</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Requests for pull request">
+      <option name="closed" value="true" />
+      <created>1701450431006</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1701450431006</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Working (except if you drag then zoom out)">
+      <option name="closed" value="true" />
+      <created>1701679477738</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1701679477738</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added observer">
+      <option name="closed" value="true" />
+      <created>1701684835476</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1701684835476</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Merged main onto branch">
+      <option name="closed" value="true" />
+      <created>1701685268951</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1701685268951</updated>
+    </task>
+    <task id="LOCAL-00029" summary="KROUSTYTOUR">
+      <option name="closed" value="true" />
+      <created>1701685972880</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1701685972880</updated>
+    </task>
+    <task id="LOCAL-00030" summary="KROUSTYTOUR">
+      <option name="closed" value="true" />
+      <created>1701686752851</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1701686752851</updated>
+    </task>
+    <task id="LOCAL-00031" summary="setInitialDirectory to the folder containing our maps for FileChooser">
+      <option name="closed" value="true" />
+      <created>1701785484205</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1701785484205</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Better code for logo and fileChooser">
+      <option name="closed" value="true" />
+      <created>1701787556466</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1701787556466</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Small mistake in the path for FileChooser">
+      <option name="closed" value="true" />
+      <created>1701795946215</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1701795946215</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Changed default folder to home">
+      <option name="closed" value="true" />
+      <created>1701847311290</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1701847311290</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Cleaner code">
+      <option name="closed" value="true" />
+      <created>1701849710176</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1701849710176</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Removed unnecessary assignments when value is already default">
+      <option name="closed" value="true" />
+      <created>1701849954878</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1701849954878</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Grammatical error fixed">
+      <option name="closed" value="true" />
+      <created>1701851217985</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1701851217985</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Fixed TSP AGAIN">
+      <option name="closed" value="true" />
+      <created>1702280417018</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1702280417018</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Fixed TSP AGAIN (x2)">
+      <option name="closed" value="true" />
+      <created>1702280730358</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1702280730358</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Propagate fix into the app">
+      <option name="closed" value="true" />
+      <created>1702281164571</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1702281164571</updated>
+    </task>
+    <task id="LOCAL-00041" summary="New unit test for TSP">
+      <option name="closed" value="true" />
+      <created>1702285333655</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1702285333655</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Fixed crash tsp">
+      <option name="closed" value="true" />
+      <created>1702286492207</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1702286492207</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Fix affichage textuel tour">
+      <option name="closed" value="true" />
+      <created>1702287202238</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1702287202238</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Amélioration calcul temps attente">
+      <option name="closed" value="true" />
+      <created>1702291846317</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1702291846317</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Affichage des paths avec un dégradé">
+      <option name="closed" value="true" />
+      <created>1702301450926</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1702301450926</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Popup about and scrollpane for tours">
+      <option name="closed" value="true" />
+      <created>1702395616827</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1702395616828</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Good computation for speed">
+      <option name="closed" value="true" />
+      <created>1702452874594</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1702452874594</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Code smells">
+      <option name="closed" value="true" />
+      <created>1702452958301</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1702452958301</updated>
+    </task>
+    <task id="LOCAL-00049" summary="TSP now works outside of time windows">
+      <option name="closed" value="true" />
+      <created>1702453537216</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1702453537216</updated>
+    </task>
+    <task id="LOCAL-00050" summary="TSP always return a solution">
+      <option name="closed" value="true" />
+      <created>1702454117674</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1702454117675</updated>
+    </task>
+    <task id="LOCAL-00051" summary="TSP returns null if the graph is not complete">
+      <option name="closed" value="true" />
+      <created>1702455070748</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1702455070749</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Added error message for trap delivery">
+      <option name="closed" value="true" />
+      <created>1702458247290</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1702458247290</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Tests for DeliveryGraph">
+      <option name="closed" value="true" />
+      <created>1702556504443</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1702556504443</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Initialization">
+      <option name="closed" value="true" />
+      <created>1702662652774</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1702662652775</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="setInitialDirectory to the folder containing our maps for FileChooser" />
+    <MESSAGE value="LOGO FOR KROUSTYTOUR" />
+    <MESSAGE value="Better code for logo and fileChooser" />
+    <MESSAGE value="Small mistake in the path for FileChooser" />
+    <MESSAGE value="Changed default folder to home" />
+    <MESSAGE value="Cleaner code" />
+    <MESSAGE value="Removed unnecessary assignments when value is already default" />
+    <MESSAGE value="Grammatical error fixed" />
+    <MESSAGE value="Fixed TSP AGAIN" />
+    <MESSAGE value="Fixed TSP AGAIN (x2)" />
+    <MESSAGE value="Propagate fix into the app" />
+    <MESSAGE value="New unit test for TSP" />
+    <MESSAGE value="Fixed crash tsp" />
+    <MESSAGE value="Fix affichage textuel tour" />
+    <MESSAGE value="Amélioration calcul temps attente" />
+    <MESSAGE value="Affichage des paths avec un dégradé" />
+    <MESSAGE value="Popup about and scrollpane for tours" />
+    <MESSAGE value="Good computation for speed" />
+    <MESSAGE value="Code smells" />
+    <MESSAGE value="TSP now works outside of time windows" />
+    <MESSAGE value="TSP always return a solution" />
+    <MESSAGE value="TSP returns null if the graph is not complete" />
+    <MESSAGE value="Added error message for trap delivery" />
+    <MESSAGE value="Tests for DeliveryGraph" />
+    <MESSAGE value="Initialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialization" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AGILE_KroustyTour$test.ic" NAME="test Coverage Results" MODIFIED="1702546773231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>
