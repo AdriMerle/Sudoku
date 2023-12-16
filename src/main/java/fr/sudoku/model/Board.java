@@ -70,8 +70,7 @@ public class Board {
     }
 
     private boolean fillRemaining(int i, int j) {
-        if (j>=N && i<N-1)
-        {
+        if (j>=N && i<N-1) {
             i = i + 1;
             j = 0;
         }
@@ -109,18 +108,13 @@ public class Board {
     }
 
     // Fill a 3 x 3 matrix.
-    private void fillBox(int row,int col)
-    {
+    private void fillBox(int row,int col) {
         int num;
-        for (int i=0; i<SRN; i++)
-        {
-            for (int j=0; j<SRN; j++)
-            {
-                do
-                {
+        for (int i=0; i<SRN; i++) {
+            for (int j=0; j<SRN; j++) {
+                do {
                     num = randomGenerator(N);
-                }
-                while (!unusedInBox(row, col, num));
+                } while (!unusedInBox(row, col, num));
 
                 grid[row+i][col+j] = num;
             }
@@ -164,25 +158,32 @@ public class Board {
 
     // check in the row for existence
     boolean unusedInRow(int i,int num) {
-        for (int j = 0; j<N; j++)
-            if (this.grid[i][j] == num)
+        for (int j = 0; j<N; j++) {
+            if (this.grid[i][j] == num) {
                 return false;
+            }
+        }
         return true;
     }
 
     // check in the cow for existence
     boolean unusedInCol(int j, int num) {
-        for (int i = 0; i<N; i++)
-            if (this.grid[i][j] == num)
+        for (int i = 0; i<N; i++) {
+            if (this.grid[i][j] == num) {
                 return false;
+            }
+        }
         return true;
     }
 
     boolean unusedInBox(int rowStart, int colStart, int num) {
-        for (int i = 0; i<SRN; i++)
-            for (int j = 0; j<SRN; j++)
-                if (this.grid[rowStart+i][colStart+j]==num)
+        for (int i = 0; i<SRN; i++) {
+            for (int j = 0; j < SRN; j++) {
+                if (this.grid[rowStart + i][colStart + j] == num) {
                     return false;
+                }
+            }
+        }
 
         return true;
     }

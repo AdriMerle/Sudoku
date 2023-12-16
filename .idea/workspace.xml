@@ -7,9 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e436b3a-6a87-40fc-94eb-23ea0e8155ec" name="Changes" comment="Fixing default values of a game">
+    <list default="true" id="7e436b3a-6a87-40fc-94eb-23ea0e8155ec" name="Changes" comment="Cleaning code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sudoku/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sudoku/controller/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/sudoku/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sudoku/model/Board.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -325,15 +324,7 @@
       <workItem from="1702729156298" duration="2838000" />
       <workItem from="1702735994925" duration="1445000" />
       <workItem from="1702737523532" duration="40000" />
-      <workItem from="1702744686349" duration="2180000" />
-    </task>
-    <task id="LOCAL-00012" summary="Fin de séance (ça marche pas)">
-      <option name="closed" value="true" />
-      <created>1701272100442</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1701272100442</updated>
+      <workItem from="1702744686349" duration="2476000" />
     </task>
     <task id="LOCAL-00013" summary="First working tsp with time windows">
       <option name="closed" value="true" />
@@ -719,7 +710,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702746616327</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Cleaning code">
+      <option name="closed" value="true" />
+      <created>1702746879700</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1702746879700</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -767,7 +766,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Removed unnecessary assignments when value is already default" />
     <MESSAGE value="Grammatical error fixed" />
     <MESSAGE value="Fixed TSP AGAIN" />
     <MESSAGE value="Fixed TSP AGAIN (x2)" />
@@ -792,7 +790,8 @@
     <MESSAGE value="Fixed display" />
     <MESSAGE value="Display taking into account invalid values" />
     <MESSAGE value="Fixing default values of a game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing default values of a game" />
+    <MESSAGE value="Cleaning code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaning code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AGILE_KroustyTour$test.ic" NAME="test Coverage Results" MODIFIED="1702546773231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
