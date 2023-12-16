@@ -46,8 +46,6 @@ public class Board {
                 this.isFixed[i][j] = this.grid[i][j] != 0;
             }
         }
-
-        System.out.println(this);
     }
 
     private void removeKDigits()
@@ -71,9 +69,7 @@ public class Board {
         }
     }
 
-    private boolean fillRemaining(int i, int j)
-    {
-        //  System.out.println(i+" "+j);
+    private boolean fillRemaining(int i, int j) {
         if (j>=N && i<N-1)
         {
             i = i + 1;
@@ -82,35 +78,30 @@ public class Board {
         if (i>=N && j>=N)
             return true;
 
-        if (i < SRN)
-        {
-            if (j < SRN)
+        if (i < SRN) {
+            if (j < SRN) {
                 j = SRN;
-        }
-        else if (i < N-SRN)
-        {
-            if (j== (i/SRN) *SRN)
-                j =  j + SRN;
-        }
-        else
-        {
-            if (j == N-SRN)
-            {
+            }
+        } else if (i < N-SRN) {
+            if (j== (i/SRN) *SRN) {
+                j = j + SRN;
+            }
+        } else {
+            if (j == N-SRN) {
                 i = i + 1;
                 j = 0;
-                if (i>=N)
+                if (i>=N) {
                     return true;
+                }
             }
         }
 
-        for (int num = 1; num<=N; num++)
-        {
-            if (checkIfSafe(i, j, num))
-            {
+        for (int num = 1; num<=N; num++) {
+            if (checkIfSafe(i, j, num)) {
                 this.grid[i][j] = num;
-                if (fillRemaining(i, j+1))
+                if (fillRemaining(i, j+1)) {
                     return true;
-
+                }
                 this.grid[i][j] = 0;
             }
         }

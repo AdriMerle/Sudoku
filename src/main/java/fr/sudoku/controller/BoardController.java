@@ -5,7 +5,6 @@ import fr.sudoku.model.Board;
 import fr.sudoku.model.DataModel;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
@@ -17,8 +16,6 @@ public class BoardController implements Controller {
     private MainController parentController;
 
     private DataModel dataModel;
-
-    private TextField[][] boardDisplay = new TextField[9][9];
 
     @Override
     public void initialize(DataModel dataModel, MainController parentController, CommandList commandList) {
@@ -73,7 +70,7 @@ public class BoardController implements Controller {
                             this.dataModel.setCellValue(finalI, finalJ, value);
                         } catch (NumberFormatException | IllegalStateException e) {
                             drawBoard();
-                            this.parentController.displayToolBarMessage(e.getMessage());
+                            this.parentController.displayToolBarMessage(e);
                         }
                     }
                 });
