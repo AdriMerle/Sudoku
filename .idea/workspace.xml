@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e436b3a-6a87-40fc-94eb-23ea0e8155ec" name="Changes" comment="Cleaning code">
+    <list default="true" id="7e436b3a-6a87-40fc-94eb-23ea0e8155ec" name="Changes" comment="Adding readme.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sudoku/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sudoku/model/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sudoku/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sudoku/controller/BoardController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,23 +324,8 @@
       <workItem from="1702729156298" duration="2838000" />
       <workItem from="1702735994925" duration="1445000" />
       <workItem from="1702737523532" duration="40000" />
-      <workItem from="1702744686349" duration="2476000" />
-    </task>
-    <task id="LOCAL-00013" summary="First working tsp with time windows">
-      <option name="closed" value="true" />
-      <created>1701336302875</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1701336302875</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Improving time managing (working only with contiguous time windows)">
-      <option name="closed" value="true" />
-      <created>1701341389552</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1701341389552</updated>
+      <workItem from="1702744686349" duration="2852000" />
+      <workItem from="1702829673737" duration="563000" />
     </task>
     <task id="LOCAL-00015" summary="Improving time managing (working only with contiguous time windows -&gt; improved yet not completely working)">
       <option name="closed" value="true" />
@@ -718,7 +703,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702746879700</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Cleaning code">
+      <option name="closed" value="true" />
+      <created>1702747206031</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1702747206031</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Adding readme.md">
+      <option name="closed" value="true" />
+      <created>1702747521055</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1702747521055</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -766,7 +767,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Grammatical error fixed" />
     <MESSAGE value="Fixed TSP AGAIN" />
     <MESSAGE value="Fixed TSP AGAIN (x2)" />
     <MESSAGE value="Propagate fix into the app" />
@@ -791,7 +791,8 @@
     <MESSAGE value="Display taking into account invalid values" />
     <MESSAGE value="Fixing default values of a game" />
     <MESSAGE value="Cleaning code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaning code" />
+    <MESSAGE value="Adding readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding readme.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AGILE_KroustyTour$test.ic" NAME="test Coverage Results" MODIFIED="1702546773231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />

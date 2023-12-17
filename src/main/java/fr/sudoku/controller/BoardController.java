@@ -17,6 +17,9 @@ public class BoardController implements Controller {
 
     private DataModel dataModel;
 
+    private static final int CELL_SIZE = 50;
+    private static final int MARGIN = 5;
+
     @Override
     public void initialize(DataModel dataModel, MainController parentController, CommandList commandList) {
         this.parentController = parentController;
@@ -32,51 +35,49 @@ public class BoardController implements Controller {
 
     private void drawBoard() {
         this.anchorPane.getChildren().clear();
-        Board board = this.dataModel.boardProperty().get();
         int size = 9;
-        int cellSize = 50;
-        int margin = 5;
-        int boardSize = size * cellSize + (size + 1) * margin;
+        int boardSize = size * CELL_SIZE + (size + 1) * MARGIN;
         this.anchorPane.setPrefSize(boardSize, boardSize);
         for (int i = 0; i < size; i++) {
-            int y = margin + i * (cellSize + margin) + i/3 * margin * 2;
             for (int j = 0; j < size; j++) {
-                int x = margin + j * (cellSize + margin) + j/3 * margin * 2;
-
                 TextField textField = new TextField();
-                textField.setPrefSize(cellSize, cellSize);
-                textField.setLayoutX(x);
-                textField.setLayoutY(y);
-                textField.setStyle("-fx-border-color: black; -fx-border-width: 1px;");
-                if(board.getCellValue(i, j) != 0) {
-                    textField.setText(String.valueOf(board.getCellValue(i, j)));
-                    if (board.isFixed(i, j)) {
-                        textField.setStyle("-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: #d3d3d3");
-                        textField.setEditable(false);
-                    }
-                } else {
-                    textField.setText("");
-                }
-                textField.setAlignment(javafx.geometry.Pos.CENTER);
-                int finalI = i;
-                int finalJ = j;
-
-                textField.textProperty().addListener((observable, oldValue, newValue) -> {
-                    if (newValue.length() > 1) {
-                        textField.setText(oldValue);
-                    } else {
-                        try {
-                            int value = Integer.parseInt(newValue);
-                            this.dataModel.setCellValue(finalI, finalJ, value);
-                        } catch (NumberFormatException | IllegalStateException e) {
-                            drawBoard();
-                            this.parentController.displayToolBarMessage(e);
-                        }
-                    }
-                });
+                formatTextField(textField, i, j);
                 this.anchorPane.getChildren().add(textField);
             }
         }
     }
 
+    public void formatTextField(TextField textField, int i, int j) {
+        int y = MARGIN + i * (CELL_SIZE + MARGIN) + i/3 * MARGIN * 2;
+        int x = MARGIN + j * (CELL_SIZE + MARGIN) + j/3 * MARGIN * 2;
+        Board board = this.dataModel.boardProperty().get();
+        textField.setPrefSize(CELL_SIZE, CELL_SIZE);
+        textField.setLayoutX(x);
+        textField.setLayoutY(y);
+        textField.setStyle("-fx-border-color: black; -fx-border-width: 1px;");
+        if(board.getCellValue(i, j) != 0) {
+            textField.setText(String.valueOf(board.getCellValue(i, j)));
+            if (board.isFixed(i, j)) {
+                textField.setStyle("-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: #d3d3d3");
+                textField.setEditable(false);
+            }
+        } else {
+            textField.setText("");
+        }
+        textField.setAlignment(javafx.geometry.Pos.CENTER);
+
+        textField.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue.length() > 1) {
+                textField.setText(oldValue);
+            } else {
+                try {
+                    int value = Integer.parseInt(newValue);
+                    this.dataModel.setCellValue(i, j, value);
+                } catch (NumberFormatException | IllegalStateException e) {
+                    drawBoard();
+                    this.parentController.displayToolBarMessage(e);
+                }
+            }
+        });
+    }
 }
