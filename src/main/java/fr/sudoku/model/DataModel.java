@@ -18,4 +18,10 @@ public class DataModel {
     public void setCellValue(int i, int j, int value) {
         this.board.get().setCellValue(i, j, value);
     }
+
+    public void generateBoard(Difficulty difficulty) {
+        Board newBoard = new Board();
+        newBoard.initializeBoard(difficulty);
+        this.board.set(newBoard);
+    }
 }

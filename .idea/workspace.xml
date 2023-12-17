@@ -7,9 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e436b3a-6a87-40fc-94eb-23ea0e8155ec" name="Changes" comment="Adding readme.md">
+    <list default="true" id="7e436b3a-6a87-40fc-94eb-23ea0e8155ec" name="Changes" comment="Fixed code smells">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sudoku/controller/command/GenerateBoardCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sudoku/model/Difficulty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sudoku/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sudoku/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sudoku/controller/ActionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sudoku/controller/ActionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sudoku/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sudoku/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sudoku/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sudoku/model/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sudoku/model/DataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sudoku/model/DataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ActionPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ActionPanel.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +126,8 @@
       <recent name="C:\Users\adrin\OneDrive - INSA Lyon\Bureau\INSA\IF\4IF S1\AGILE-KroustyTour\src\main\java\fr\insalyon\algorithm\TSPprof" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fr.sudoku.controller.command" />
+      <recent name="fr.sudoku.model" />
       <recent name="fr.insalyon.algorithm.TSPprof" />
       <recent name="fr.insalyon.algorithm" />
     </key>
@@ -325,15 +333,7 @@
       <workItem from="1702735994925" duration="1445000" />
       <workItem from="1702737523532" duration="40000" />
       <workItem from="1702744686349" duration="2852000" />
-      <workItem from="1702829673737" duration="563000" />
-    </task>
-    <task id="LOCAL-00015" summary="Improving time managing (working only with contiguous time windows -&gt; improved yet not completely working)">
-      <option name="closed" value="true" />
-      <created>1701342971075</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1701342971075</updated>
+      <workItem from="1702829673737" duration="3212000" />
     </task>
     <task id="LOCAL-00016" summary="Fixed uncontiguous TimeWindow problem (should work for any set of deliveries)">
       <option name="closed" value="true" />
@@ -719,7 +719,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702747521055</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Fixed code smells">
+      <option name="closed" value="true" />
+      <created>1702830258482</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1702830258482</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -767,7 +775,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Fixed TSP AGAIN" />
     <MESSAGE value="Fixed TSP AGAIN (x2)" />
     <MESSAGE value="Propagate fix into the app" />
     <MESSAGE value="New unit test for TSP" />
@@ -792,7 +799,8 @@
     <MESSAGE value="Fixing default values of a game" />
     <MESSAGE value="Cleaning code" />
     <MESSAGE value="Adding readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding readme.md" />
+    <MESSAGE value="Fixed code smells" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed code smells" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AGILE_KroustyTour$test.ic" NAME="test Coverage Results" MODIFIED="1702546773231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />

@@ -54,7 +54,6 @@ public class MainController implements Controller {
 		}
 
 		Board board = new Board();
-		board.initializeBoard();
 		this.dataModel.setBoard(board);
 	}
 

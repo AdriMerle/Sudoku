@@ -8,7 +8,7 @@ public class Board {
     private static final int N = 9;
     private static final int SRN = 3;
 
-    private static final int K = 30;
+    private int numberOfEmptyCells = 0;
     private final int[][] grid = new int[N][N];
 
     private final boolean[][] isFixed = new boolean[N][N];
@@ -28,7 +28,8 @@ public class Board {
     /** fills randomly the board with numbers from 1 to 9
      * while respecting the rules of the game
      */
-    public void initializeBoard() {
+    public void initializeBoard(Difficulty difficulty) {
+        this.numberOfEmptyCells = difficulty.getNbCellsToHide();
 
         // Fill the diagonal
         for (int i = 0; i<N; i=i+SRN) {
@@ -48,11 +49,9 @@ public class Board {
         }
     }
 
-    private void removeKDigits()
-    {
-        int count = K;
-        while (count != 0)
-        {
+    private void removeKDigits() {
+        int count = numberOfEmptyCells;
+        while (count != 0) {
             int cellId = randomGenerator(N*N)-1;
 
             // extract coordinates i  and j
@@ -61,8 +60,7 @@ public class Board {
             if (j != 0)
                 j = j - 1;
 
-            if (this.grid[i][j] != 0)
-            {
+            if (this.grid[i][j] != 0) {
                 count--;
                 this.grid[i][j] = 0;
             }
